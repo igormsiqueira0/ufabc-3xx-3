@@ -1,0 +1,38 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	outline: none;
+	text-align: center;
+}
+
+button {
+	background: white;
+	width: 280px;
+	height: 160px;
+	cursor: pointer;
+	border: 3px solid black;
+	&:hover {
+		filter: brightness(0.9);
+	}
+}
+
+.map {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 5px 500px;
+	width: fit-content;
+	margin-top: 100px;
+	margin-inline: auto;
+}
+
+.livre {
+	background-color: rgba(0, 255, 0, 0.33);
+}
+
+.ocupada {
+	background-color: rgba(255, 0, 0, 0.33);
+}
+
